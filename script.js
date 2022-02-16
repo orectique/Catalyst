@@ -1,5 +1,5 @@
 var $form = $('form#test-form'),
-    url = 'https://script.google.com/macros/s/AKfycbx_M55LkCrI0ZURQfQjG-Lde-3OkJQOTkEP7mviEN20wYwusif8/exec'
+    url = 'https://script.google.com/macros/s/AKfycbyZYqO5OyN2NwrGmBSMOCEZYoVrt07uZHUfAOxXLDpPE3RFFGc/exec'
 
 $('#submit-form').on('click', function(e) {
   e.preventDefault();
