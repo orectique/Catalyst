@@ -1,31 +1,57 @@
-<html>
 <head>
     <link rel="stylesheet" href="styles.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
 <body>
-    
-<form id="test-form" class = "form">
-  
-    <div>
-      <label>Field 1</label>
-      <input type="text" name="name" placeholder="Name"/>
+<div id="container">
+    <h1>&bull; Catalyst &bull;</h1>
+    <h4>Doing away with awkward ice breaker interogations.</h4>
+    <h5>You can find me at @count_von_dolt on Instagram and Orectique#3418 on Discord.</h5>
+    <div class="underline">
     </div>
-  
-    <div>
-      <label>Field 2</label>
-      <input type="text" name="nickname" placeholder="Nickname"/>
+    <br>
+    <div class = 'info'>
+        <p>I'm not a big fan of long winded, cringeworthy conversations where people pretend they want to get to know each other. This tool helps skip that. Lemme know what you like and we'll pick up our converstion from there.</p>
     </div>
-  
-    <div>
-      <button type="submit"id="submit-form">Submit</button>
-    </div>
-  
-  </form>
 
-  <script src = './script.js'></script>
-    
+    <form id="contact_form">
+      <div class="name">
+        <label for="name"></label>
+        <input type="text" placeholder="My name is" name="name" id="name_input" required>
+      </div>
+
+      <div class="nickname">
+        <label for="nickname"></label>
+        <input type="text" placeholder="But, I would rather be called" name="nickname" id="nickname_input">
+      </div>
+
+      <div class="handles">
+        <label for="name"></label>
+        <input type="text" placeholder="I'd like you to note the following social handles (separated by commas):" name="handles" id="handles_input" required>
+      </div>
+      <div class="subject">
+        <label for="subject"></label>
+        <select placeholder="Subject line" name="subject" id="subject_input" required>
+          <option disabled hidden selected>We know each other because</option>
+          <option>we have concurring classes.</option>
+          <option>we work in the same team.</option>
+          <option>you are awesome. Everyone knows you.</option>
+          <option>we don't. But, I would like to get to know you.</option>
+        </select>
+      </div>
+      <div class = "info">
+        <p>I'm a hyperactive, Mad-Hatter-esque character. I enjoy - or used to enjoy, mountain biking, yoyos, CS:GO - none of those fancy new FPS for me, World of Warships/Tanks, and Tanki. I'm majoring in Data Science. I have a sufficiently large repertoire of pop culture knowledge, so we should be able to maintain a conversation.</p>
+        <p>I enjoy Conan Doyle, Gabriel Garcia Marquez, Nietzsche, and Kazuo Ishiguro, amongst other authors. My list of favourite musicians includes Sinatra, Cigarettes after Sex, Of Monsters and Men, Joji, Phil Collins, and Bazzi.  </p>
+    </div>
+      <div class="interests">
+        <label for="interests"></label>
+        <textarea name="interests" placeholder="Tell me about your interests. What defines you? Do you happen to find any of my interests, well, interesting?" id="interests_input" cols="30" rows="5" required></textarea>
+      </div>
+      <div class="submit">
+        <button type="submit" id="form_button">Log me!</button>
+      </div>
+    </form><!-- // End form -->
+  </div><!-- // End #container -->
+<script src = "script.js"></script>
 </body>
-        
-</html>

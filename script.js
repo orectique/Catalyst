@@ -1,7 +1,7 @@
-var $form = $('form#test-form'),
+var $form = $('form#contact_form'),
     url = 'https://script.google.com/macros/s/AKfycbyZYqO5OyN2NwrGmBSMOCEZYoVrt07uZHUfAOxXLDpPE3RFFGc/exec'
 
-$('#submit-form').on('click', function(e) {
+$('#form_button').on('click', function(e) {
   e.preventDefault();
   var jqxhr = $.ajax({
     url: url,
@@ -9,6 +9,7 @@ $('#submit-form').on('click', function(e) {
     dataType: "json",
     data: $form.serialize()
   }).success(
-    // do something
+    alert('Thank you! You have been logged.')
   );
 })
+
